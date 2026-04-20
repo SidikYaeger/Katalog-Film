@@ -4,7 +4,7 @@ Repositori ini berisi kode sumber untuk aplikasi **Katalog Film**, sebuah progra
 
 ## 🛠️ Teknologi yang Digunakan
 - **Bahasa Pemrograman:** C++
-- **IDE:** Code::Blocks (file *project* `.cbp` tersedia)
+- **IDE:** Code::Blocks
 
 ## 📌 Deskripsi Program
 Program ini menggunakan konsep struktur data *(seperti Linked List / Tree / Graph — silakan sesuaikan)* untuk mengelola, menyimpan, dan memanipulasi informasi terkait film. Kode dibagi menjadi beberapa modul (`main.cpp`, `tubes.cpp`, dan `tubes.h`) untuk menjaga struktur kode tetap rapi dan mudah dibaca (Modular Programming).
