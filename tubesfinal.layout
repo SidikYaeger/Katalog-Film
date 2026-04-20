@@ -1,0 +1,54 @@
+#ifndef TUBES_H_INCLUDED
+#define TUBES_H_INCLUDED
+
+#include <iostream>
+using namespace std;
+
+const int genreMax = 10;
+typedef struct node *adrNode;
+struct film {
+    string judul;
+    int tahun;
+    float rating;
+    string genre[genreMax];
+    int genreCount;
+};
+
+struct node {
+    film info;
+    adrNode left;
+    adrNode right;
+};
+
+struct tree {
+    adrNode root;
+};
+
+void createTree(tree &T);
+adrNode createNode(film data);
+void insertNode(adrNode &root, film data);
+void printInOrder(adrNode root);
+void printPostOrder(adrNode root);
+void printPreOrder(adrNode root);
+adrNode cek(adrNode root, string judul);
+void searchJudul(adrNode root);
+void clearScreen();
+void searchGenre(adrNode root, string genre);
+void searchTahun(adrNode root, int tahun);
+adrNode findmin(adrNode root);
+adrNode hapusFilm(adrNode root, string judul);
+void hapusTahunFilm(adrNode root, string judul);
+void hapusGenreFilm(adrNode root, string judul, string genreHapus);
+int countFilm(adrNode root);
+int countRating(adrNode root, float rating);
+void printRating(adrNode root, float rating);
+void searchByRating(adrNode root, float rating);
+
+void opsiLanjutan(tree &t);
+bool submenuHapus(tree &t, adrNode p);
+void EditMenu(tree &t, adrNode p);
+void updateFilmMenu(adrNode p);
+void menu();
+void insertDummyData(tree &t);
+
+#endif // TUBES_H_INCLUDED
